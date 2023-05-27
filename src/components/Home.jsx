@@ -32,7 +32,8 @@ const Home = () => {
 
 
     return ( 
-        <div className="home">   
+        <div className="home">  
+          <h1>Movie List   </h1> 
 
         {pending==true  && <div className="loading"></div> }
 
@@ -46,7 +47,7 @@ const Home = () => {
 
         {movies && <Movieslist movies={movies} title="Drama movies"/>}
 
-
+      
 
         </div>
      );
