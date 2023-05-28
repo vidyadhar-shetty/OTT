@@ -15,7 +15,6 @@ const Relevant = ( {genre} ) => {
     return ( 
     <div className="relevant-movies">
 
-        <h1>{genre}</h1>
 
         {movies && 
         <Movieslist 

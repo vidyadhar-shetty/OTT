@@ -19,6 +19,7 @@ const Moviedetails = () => {
     useEffect(()=>{
             setMovie(null);
             setPending(true);
+        
         setTimeout(()=>{
             fetch("http://localhost:4000/movies/"+ id)
             .then((res)=>{ return res.json() })

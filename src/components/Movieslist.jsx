@@ -38,8 +38,9 @@ const Movieslist = ({movies , title}) =>
                                     <img src={movie.poster} alt="poster" width="200px" height="250px" />
                                     <h2>{movie.moviename}</h2>
                                     <p>{movie.genre}</p>
-
+                                    
                                 </Link>
+
                                 {favId.includes(movie.id) ?
                                 <button className="remove-btn" onClick={ ()=>{removeMovie(movie.id)} }> <i class='bx bxs-heart' ></i></button> 
                                 :
