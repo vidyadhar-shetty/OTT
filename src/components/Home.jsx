@@ -16,7 +16,7 @@ const Home = () => {
         }
 
         setTimeout(()=>{
-            fetch("http://localhost:4000/movies")
+            fetch("https://ott-4f0aa-default-rtdb.firebaseio.com/movies.json")
             .then((res)=>{ return res.json() })
             .then((data)=>{ 
                 console.log(data);
