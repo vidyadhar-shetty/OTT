@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 
-*{
+* {
   padding: 0px;
   margin: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   box-sizing: border-box;
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgb(34, 28, 162) 0%, rgb(28, 62, 184) 74%, rgb(60, 52, 203) 100%);
+  background-color: rgb(92, 92, 92);
 }
+
 /* ----------------------------NAV STYLE-------------------------------------  */
 
-nav{
+nav {
   height: 70px;
   color: white;
   background-color: rgb(0, 0, 0);
@@ -24,16 +24,16 @@ nav{
   top: 0px;
   z-index: 1000;
 }
-#logo h1{
-  font-family: 'Bruno Ace SC', cursive;
+#logo h1 {
+  font-family: "Bruno Ace SC", cursive;
   letter-spacing: 4px;
   font-size: 30px;
 }
-#logo a{
+#logo a {
   color: white;
   text-decoration: none;
 }
-#search-bar input{
+#search-bar input {
   width: 300px;
   height: 35px;
   border: none;
@@ -41,7 +41,7 @@ nav{
   border-radius: 4px;
   font-size: 15px;
 }
-#search-bar button{
+#search-bar button {
   width: 80px;
   height: 35px;
   border: none;
@@ -49,7 +49,8 @@ nav{
   margin-left: -80px;
   font-size: 15px;
 }
-#add-movie a ,#fav-movie a  {
+#add-movie a,
+#fav-movie a {
   color: white;
   font-size: 18px;
   padding: 10px 20px;
@@ -57,11 +58,12 @@ nav{
   border-radius: 4px;
   transition: 0.2s linear;
 }
-#add-movie a:hover , #fav-movie a:hover {
+#add-movie a:hover,
+#fav-movie a:hover {
   background-color: white;
   color: rgb(6, 6, 63);
 }
-.suggestion-box{
+.suggestion-box {
   color: black;
   width: 200px;
   height: auto;
@@ -72,37 +74,34 @@ nav{
   padding: 10px;
   border-radius: 4px;
 }
-.suggestion-box ul{
-  list-style:none;
+.suggestion-box ul {
+  list-style: none;
 }
-.suggestion-box ul li{
+.suggestion-box ul li {
   background-color: rgb(221, 219, 219);
   transition: 0.2s;
   margin: 5px auto;
 }
-.suggestion-box ul li:hover{
+.suggestion-box ul li:hover {
   transform: scale(1.05);
   background-color: rgb(186, 185, 185);
   cursor: pointer;
 }
-.suggestion-box ul a{
+.suggestion-box ul a {
   color: black;
   text-decoration: none;
 }
-#hamberger{
+#hamberger {
   display: none;
 }
 
-
-
-
 /* ----------------------------HOME STYLE-------------------------------------  */
 
-.home{
+.home {
   padding: 20px 100px;
 }
 
-.movies{
+.movies {
   width: 100%;
   height: auto;
   padding: 20px;
@@ -111,7 +110,7 @@ nav{
   flex-wrap: wrap;
   row-gap: 20px;
 }
-.movie{
+.movie {
   width: 250px;
   height: auto;
   text-align: center;
@@ -120,19 +119,19 @@ nav{
   border-radius: 4px;
   transition: 0.2s;
 }
-.movie a{
+.movie a {
   color: black;
   text-decoration: none;
 }
-.movie img{
+.movie img {
   width: 100%;
   height: 250px;
   border-radius: 6px;
 }
-.movie:hover{
+.movie:hover {
   transform: scale(1.05);
 }
-#title{
+#title {
   color: white;
   background-color: black;
   text-align: center;
@@ -141,42 +140,42 @@ nav{
   z-index: 100;
 }
 
-.movie-details{
+.movie-details {
   width: 80vw;
   height: auto;
   margin: auto;
 }
-.movie-details img{
+.movie-details img {
   width: 300px;
   height: 350px;
 }
-.movie-details button{
-    background-color: white;
-    display: block;
-    font-size: 20px;
-    padding: 10px 30px;
-    margin: 10px 0px;
-    border: solid 2px black;
+.movie-details button {
+  background-color: white;
+  display: block;
+  font-size: 20px;
+  padding: 10px 30px;
+  margin: 10px 0px;
+  border: solid 2px black;
 }
-.movie-details button:hover{
+.movie-details button:hover {
   background-color: black;
   color: white;
 }
-.movie-details a{
+.movie-details a {
   color: white;
   text-decoration: none;
 }
 /*---------------------add movie----------------------  */
 
-.add-movie{
+.add-movie {
   width: 80vw;
   margin: 50px auto;
   text-align: center;
 }
-.add-movie h1{
+.add-movie h1 {
   margin: 20px;
 }
-.add-movie form{
+.add-movie form {
   width: 500px;
   margin: auto;
   display: flex;
@@ -185,7 +184,7 @@ nav{
   border: solid 2px black;
   border-radius: 8px;
 }
-.add-movie form input{
+.add-movie form input {
   font-size: 17px;
   font-weight: 500;
   padding-left: 20px;
@@ -197,33 +196,30 @@ nav{
   border: solid 1px black;
   transition: 0.2s;
 }
-.add-movie form input:focus{
+.add-movie form input:focus {
   transform: scale(1.1);
 }
-.add-movie form input[type="checkbox"]
-{
+.add-movie form input[type="checkbox"] {
   width: 20px;
   height: 20px;
   margin-left: 10px;
 }
-.add-movie form input::placeholder
-{
+.add-movie form input::placeholder {
   padding-left: 20px;
   font-size: 17px;
   font-weight: 500;
 }
-.add-movie form fieldset{
+.add-movie form fieldset {
   width: 80%;
   margin: auto;
   display: grid;
   grid-template-columns: 30px 100px 30px 100px 30px 100px;
 }
-.add-movie form textarea{
+.add-movie form textarea {
   width: 80%;
   margin: auto;
-} 
-.add-movie form input[type="submit"]
-{
+}
+.add-movie form input[type="submit"] {
   background-color: white;
   color: black;
   font-size: 18px;
@@ -231,29 +227,27 @@ nav{
   width: 200px;
   height: 40px;
   margin: 20px auto;
-  transition: 0.2s
+  transition: 0.2s;
 }
-.add-movie form input[type="submit"]:hover
-{
-  background-color:black;
+.add-movie form input[type="submit"]:hover {
+  background-color: black;
   color: white;
 }
 
-
 /* ----------------------------------------- fav movie buttons ------------------------------- */
-.fav-movies{
+.fav-movies {
   width: 80%;
-  margin:20px auto;
+  margin: 20px auto;
 }
 
-.add-btn{
+.add-btn {
   color: red;
   background-color: transparent;
   border: none;
   font-size: 25px;
   animation: emptyHeart 0.5s;
 }
-.remove-btn{
+.remove-btn {
   color: red;
   background-color: transparent;
   border: none;
@@ -262,104 +256,99 @@ nav{
 }
 
 @keyframes filledHeart {
-  0%{
+  0% {
     transform: scale(0);
   }
-  60%
-  {
+  60% {
     transform: scale(1.2);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
 
 @keyframes emptyHeart {
-  0%{
+  0% {
     transform: scale(0);
   }
-  60%
-  {
+  60% {
     transform: scale(1.2);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
 
-
 /* --------------------------search comp ------------------- */
 
-.search-cont{
+.search-cont {
   width: 80%;
   margin: auto;
 }
 
-
 /* -------------------------Loading------------------------------ */
 
-.loading{
+.loading {
   width: 200px;
   height: 200px;
   margin: 50px auto;
-  border-top:solid 20px black;
-  border-bottom:solid 20px black;
-  border-right:solid 20px white;
-  border-left:solid 20px white;
+  border-top: solid 20px black;
+  border-bottom: solid 20px black;
+  border-right: solid 20px white;
+  border-left: solid 20px white;
   border-radius: 50%;
   animation: loading 1s linear infinite;
 }
 @keyframes loading {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
 
-
 /* ------------------------------ tablet style------------------------ */
 
-@media (max-width:1020px) 
-{
-  nav{
+@media (max-width: 1020px) {
+  nav {
     padding: 20px 60px;
   }
-  #logo h1{
+  #logo h1 {
     font-size: 25px;
   }
-  #search-bar{
+  #search-bar {
     width: 300px;
   }
-  #search-bar input{
+  #search-bar input {
     width: 250px;
     height: 35px;
     font-size: 13px;
   }
-  #search-bar button{
+  #search-bar button {
     width: 60px;
     height: 35px;
     margin-left: -60px;
     font-size: 13px;
   }
-  #add-movie , #fav-movie {
+  #add-movie,
+  #fav-movie {
     display: none;
   }
-  #hamberger{
+  #hamberger {
     display: block;
   }
-  #hamberger span{
+  #hamberger span {
     font-size: 30px;
   }
-  #menu{
+  #menu {
     background-color: black;
     width: 170px;
     position: absolute;
     top: 75px;
     right: 50px;
   }
-  #menu a{
+  #menu a {
     display: block;
     margin: 5px 10px;
     color: white;
@@ -369,7 +358,7 @@ nav{
     border-radius: 4px;
     transition: 0.2s linear;
   }
-  #menu a:hover{
+  #menu a:hover {
     color: black;
     background-color: white;
   }
@@ -377,70 +366,69 @@ nav{
 
 /*--------------------------------mobile screen---------------- */
 
-@media (max-width:700px) 
-{
-  nav{
+@media (max-width: 700px) {
+  nav {
     padding: 20px 40px;
   }
-  #logo h1{
+  #logo h1 {
     font-size: 20px;
   }
-  #search-bar{
+  #search-bar {
     width: 250px;
   }
-  #search-bar input{
+  #search-bar input {
     width: 150px;
     height: 35px;
     font-size: 10px;
   }
-  #search-bar button{
+  #search-bar button {
     width: 40px;
     height: 35px;
     margin-left: -30px;
     font-size: 10px;
   }
 
-  .home{
+  .home {
     padding: 50px;
   }
-  .movie-list{
+  .movie-list {
     width: 90vw;
   }
-  .movies{
+  .movies {
     width: 100%;
     height: 400px;
     /* horizontal scroll  */
-    flex-direction: column; 
+    flex-direction: column;
     /* vertical scroll  */
     /* flex-direction: row; */
     overflow: auto;
   }
-  .movie{
+  .movie {
     width: 210px;
     margin: 0px 20px;
     padding: 10px;
     transition: 0.2s;
   }
-  .movie a{
+  .movie a {
     color: black;
     text-decoration: none;
   }
-  .movie img{
+  .movie img {
     width: 100%;
     height: 210px;
     border-radius: 6px;
   }
-  .movie:hover{
+  .movie:hover {
     transform: scale(1.05);
   }
-  .movie h2{
+  .movie h2 {
     font-size: 20px;
   }
-  .add-movie{
+  .add-movie {
     transform: scale(0.8);
     margin: 0px auto;
   }
-  .add-movie h1{
+  .add-movie h1 {
     margin: 0px;
   }
 }
