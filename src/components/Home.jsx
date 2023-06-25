@@ -3,7 +3,7 @@ import Movieslist from "./Movieslist.jsx";
 
 const Home = () => {
 
-    let [movies , setMovies] = useState(null);
+    let [movies , setMovies] = useState([]);
     let [error , setError] = useState(null);
     let [pending , setPending] = useState(true);
     
@@ -16,11 +16,12 @@ const Home = () => {
         }
 
         setTimeout(()=>{
-            fetch("http://localhost:4000/movies")
+            // fetch("http://localhost:4000/movies")
+            fetch("https://ott-4f0aa-default-rtdb.firebaseio.com/movies.json")
             .then((res)=>{ return res.json() })
             .then((data)=>{ 
                 console.log(data);
-                setMovies(data);
+                setMovies(data || []);
                 setPending(false);
                 })
             .catch((err)=>{

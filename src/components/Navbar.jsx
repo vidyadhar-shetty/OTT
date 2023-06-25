@@ -9,7 +9,8 @@ const Navbar = () => {
 
 
     useEffect(()=>{
-        fetch("http://localhost:4000/movies")
+        // fetch("http://localhost:4000/movies")
+        fetch("https://ott-4f0aa-default-rtdb.firebaseio.com/movies.json")
        .then((res)=>{return res.json()})
        .then((data)=>{
         let names = data.map((m)=>{return {moviename : m.moviename , id : m.id} })
@@ -40,8 +41,8 @@ const Navbar = () => {
             </div>
             <div id="hamberger">
                 <span onClick={()=>{setMenu(!menu)}}>
-                    {menu==false ?  <i class='bx bx-menu'></i> :
-                                    <i class='bx bx-menu-alt-right'></i>}
+                    {menu==false ?  <i className='bx bx-menu'></i> :
+                                    <i className='bx bx-menu-alt-right'></i>}
                 </span>
 
 

@@ -32,7 +32,7 @@ const Movieslist = ({movies , title}) =>
         <div className="movies">
                     {movies.map((movie)=>{
                         return(
-                            <div className="movie">
+                            <div className="movie" key={Math.random()}>
                                 <Link to={`/moviedetails/${movie.id}`}>
                                    
                                     <img src={movie.poster} alt="poster" width="200px" height="250px" />
@@ -42,9 +42,9 @@ const Movieslist = ({movies , title}) =>
                                 </Link>
 
                                 {favId.includes(movie.id) ?
-                                <button className="remove-btn" onClick={ ()=>{removeMovie(movie.id)} }> <i class='bx bxs-heart' ></i></button> 
+                                <button className="remove-btn" onClick={ ()=>{removeMovie(movie.id)} }> <i className='bx bxs-heart' ></i></button> 
                                 :
-                                <button className="add-btn" onClick={ ()=>{add(movie)} }><i class='bx bx-heart' ></i></button>}
+                                <button className="add-btn" onClick={ ()=>{add(movie)} }><i className='bx bx-heart' ></i></button>}
                             </div>
                         )
                     })}

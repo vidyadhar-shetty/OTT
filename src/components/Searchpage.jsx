@@ -5,7 +5,7 @@ import Movieslist from "./Movieslist";
 const Searchpage = () => {
 
     let {searchword} = useParams();
-    let [movies , setMovies] = useState(null);  
+    let [movies , setMovies] = useState([]);  
     let [error , setError] = useState(null);
     let [pending , setPending] = useState(true);
     
@@ -13,7 +13,8 @@ const Searchpage = () => {
         setMovies(null);
         setPending(true);
         setTimeout(()=>{
-            fetch("http://localhost:4000/movies")
+            // fetch("http://localhost:4000/movies")
+            fetch("https://ott-4f0aa-default-rtdb.firebaseio.com/movies.json")
             .then((res)=>{ return res.json() })
             .then((data)=>{ 
                 let d = data.filter((m)=>{

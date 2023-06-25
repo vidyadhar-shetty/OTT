@@ -11,17 +11,17 @@ function App() {
   return (
       <BrowserRouter>
         <div className="App">
-          <Navbar/>
+        <Navbar />
+        
           <Routes>
-
             <Route path="/" element={<Home/>}/>
-            {/* <Route path="/add" element={<Addmovie/>}/>
+            <Route path="/add" element={<Addmovie/>}/>
             <Route path="/moviedetails/:id" element={<Moviedetails/>}/>
             <Route path="/fav" element={<Favorites/>} />
             <Route path="/search/:searchword" element={<Searchpage/>}/>
-            <Route path="/edit/:id" element={<Editmovie/>}/> */}
-
-          </Routes>
+            <Route path="/edit/:id" element={<Editmovie/>}/>
+        </Routes>
+        
         </div>
       </BrowserRouter>
   );
