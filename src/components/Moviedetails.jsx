@@ -20,23 +20,23 @@ const Moviedetails = () => {
             setMovie(null);
             setPending(true);
         
-        setTimeout(()=>{
-            fetch("http://localhost:4000/movies/"+ id)
+        setTimeout(() => {
+            fetch(`https://ott-4f0aa-default-rtdb.firebaseio.com/movies/${id-1}.json`)
             .then((res)=>{ return res.json() })
             .then((data)=>{ 
                 console.log(data);
-                setMovie(data);
+                setMovie(data || []);
                 setPending(false);
                 })
             .catch((err)=>{
                 setError("404 Network issue !!! please try again later");
                 setPending(false);
             })
-        } , 3000)
+        } , 100)
     } , [id])
 
     let deleteMovie = ()=>{
-        fetch("http://localhost:4000/movies/"+ id , {method : "DELETE"} )
+        fetch(`https://ott-4f0aa-default-rtdb.firebaseio.com/movies/${id-1}.json` , {method : "DELETE"} )
         .then(()=>{ navigate("/") })
     }
 

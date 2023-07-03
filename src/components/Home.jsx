@@ -28,7 +28,7 @@ const Home = () => {
                 setError("404 Network issue !!! please try again later");
                 setPending(false);
             })
-        } , 3000)
+        } , 100)
     } , [])
 
 
